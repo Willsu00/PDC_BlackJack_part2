@@ -1,4 +1,5 @@
-package com.mycompany.blackjackpdc;
+package pdc_blackjack_part2;
+
 
 import java.util.ArrayList;
 import java.util.Collections;

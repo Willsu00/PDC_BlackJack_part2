@@ -1,4 +1,5 @@
-package com.mycompany.blackjackpdc;
+package pdc_blackjack_part2;
+
 
 public class Dealer extends Player {
     @Override
