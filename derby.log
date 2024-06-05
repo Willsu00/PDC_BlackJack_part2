@@ -1,0 +1,44 @@
+Wed Jun 05 13:11:02 NZST 2024 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Jun 05 13:11:09 NZST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018f-e5f3-0dff-00004a688694 
+on database directory C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2\sample with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/D:/University/AUT/BCIS%20Year%202%20Sem%201/P3/derby/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.8.1+1
+user.dir=D:\University\AUT\BCIS Year 2 Sem 1\P3\derby\db-derby-10.14.2.0-lib
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Jun 05 13:11:44 NZST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance c0f7802d-018f-e5f3-0dff-00004a688694 
+on database directory C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2\BlackJack_AccountDetails with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/D:/University/AUT/BCIS%20Year%202%20Sem%201/P3/derby/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.8.1+1
+user.dir=D:\University\AUT\BCIS Year 2 Sem 1\P3\derby\db-derby-10.14.2.0-lib
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Jun 05 13:11:44 NZST 2024:
+Shutting down instance c0f7802d-018f-e5f3-0dff-00004a688694 on database directory C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2\BlackJack_AccountDetails with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Wed Jun 05 13:11:44 NZST 2024 Thread[DRDAConnThread_3,5,main] (DATABASE = BlackJack_AccountDetails), (DRDAID = {3}), Database 'BlackJack_AccountDetails' shutdown.
+----------------------------------------------------------------
+Wed Jun 05 13:11:49 NZST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance bc9ec0ce-018f-e5f3-0dff-00004a688694 
+on database directory C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2\BlackJack_AccountDetails with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@73d16e93 
+Loaded from file:/D:/University/AUT/BCIS%20Year%202%20Sem%201/P3/derby/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.8.1+1
+user.dir=D:\University\AUT\BCIS Year 2 Sem 1\P3\derby\db-derby-10.14.2.0-lib
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\willi\Documents\NetBeansProjects\PDC_BlackJack_part2
+Database Class Loader started - derby.database.classpath=''
