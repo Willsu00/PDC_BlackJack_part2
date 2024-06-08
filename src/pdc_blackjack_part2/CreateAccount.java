@@ -11,9 +11,11 @@ public class CreateAccount extends JFrame implements ActionListener {
 
     JPanel panel2 = new JPanel();
     JLabel userName, passWord, nameName;
-    JTextField textField1, textField2, textField3;
+    JTextField nameField, userField, passField;
 
     CreateAccount() {
+
+        button1.addActionListener(this);
 
         nameName = new JLabel();
         nameName.setText("Name:");
@@ -22,17 +24,17 @@ public class CreateAccount extends JFrame implements ActionListener {
         passWord = new JLabel();
         passWord.setText("Password:");
 
-        textField1 = new JTextField();
-        textField2 = new JTextField();
-        textField3 = new JPasswordField(15);
+        nameField = new JTextField();
+        userField = new JTextField();
+        passField = new JPasswordField(15);
 
         panel2 = new JPanel(new GridLayout(4, 1));
         panel2.add(nameName);
-        panel2.add(textField1);
+        panel2.add(nameField);
         panel2.add(userName);
-        panel2.add(textField2);
+        panel2.add(userField);
         panel2.add(passWord);
-        panel2.add(textField3);
+        panel2.add(passField);
         panel2.add(button1);
 
         add(panel2, BorderLayout.CENTER);
@@ -47,11 +49,13 @@ public class CreateAccount extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
-        String nameName = textField1.getText();
-        String passWord = textField3.getText();
-        String passValue = textField2.getText();
+        String nameName = nameField.getText();
+        String passWord = userField.getText();
+        String userName = passField.getText();
 
-        if (button1 == e.getSource() && nameName != null && passWord != null && passValue != null) {
+        System.out.println(nameName + " " + passWord + " " + userName);
+
+        if (!nameName.isEmpty() && !userName.isEmpty() && !passWord.isEmpty()) {
 
             JOptionPane.showMessageDialog(this, "Account Created Successfully! Please Login to Continue!");
 
@@ -59,9 +63,11 @@ public class CreateAccount extends JFrame implements ActionListener {
                 Login form = new Login();
                 form.pack();
                 form.setVisible(true);
+                this.dispose();
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, ex.getMessage());
             }
+
         } else {
             JOptionPane.showMessageDialog(this, "Cannot create account. Please fill in all fields.");
         }
