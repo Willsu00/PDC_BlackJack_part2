@@ -69,6 +69,8 @@ public class Login extends JFrame implements ActionListener {
 
                 BlackjackWindow window = new BlackjackWindow();
                 window.setVisible(true);
+                
+                this.dispose();
 
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid Username or Password");
