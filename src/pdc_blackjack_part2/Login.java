@@ -15,7 +15,7 @@ import java.lang.Exception;
  */
 public class Login extends JFrame implements ActionListener {
 
-    JButton button1;
+    JButton button1, button2;
     JPanel panel1;
     JLabel userName, passWord, nameName;
     final JTextField textField1, textField2, textField3;
@@ -36,6 +36,9 @@ public class Login extends JFrame implements ActionListener {
         button1 = new JButton("Submit");
         button1.addActionListener(this);
 
+        button2 = new JButton("Create Account");
+        button2.addActionListener(this);
+
         panel1 = new JPanel(new GridLayout(4, 1));
         panel1.add(nameName);
         panel1.add(textField3);
@@ -44,6 +47,7 @@ public class Login extends JFrame implements ActionListener {
         panel1.add(passWord);
         panel1.add(textField2);
         panel1.add(button1);
+        panel1.add(button2);
 
         add(panel1, BorderLayout.CENTER);
         setTitle("Login Form");
@@ -64,8 +68,15 @@ public class Login extends JFrame implements ActionListener {
             BlackjackWindow window = new BlackjackWindow();
             window.setVisible(true);
 
-        } else {
+        }
+        if (button2 == e.getSource()) {
+            CreateAccount account = new CreateAccount();
+            account.setVisible(true);
+
+        }
+        if (nameValue != "name" && userValue != "test" && passValue != "1234") {
             JOptionPane.showMessageDialog(this, "Invalid Username or Password");
         }
+
     }
 }

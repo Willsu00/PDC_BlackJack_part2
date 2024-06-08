@@ -38,7 +38,6 @@ class BlackjackWindow extends JFrame implements ActionListener {
         panel.add(button3);
         button3.setLayout(getLayout());
         panel.add(button4);
-        button4.setLayout(getLayout());
 
         add(panel, BorderLayout.CENTER);
         setSize(500, 500);
