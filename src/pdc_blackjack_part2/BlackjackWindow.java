@@ -3,8 +3,8 @@ package pdc_blackjack_part2;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.IOException;
-import java.lang.Exception;
+// import java.io.IOException;
+// import java.lang.Exception;
 
 class BlackjackWindow extends JFrame implements ActionListener {
 

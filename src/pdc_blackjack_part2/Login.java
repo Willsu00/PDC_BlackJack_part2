@@ -67,7 +67,7 @@ public class Login extends JFrame implements ActionListener {
             if (nameValue.equals("name") && userValue.equals("test")
                     && passValue.equals("1234")) {
                 JOptionPane.showMessageDialog(this, "Login Successful");
-
+                    
                 BlackjackWindow window = new BlackjackWindow();
                 window.setVisible(true);
 
