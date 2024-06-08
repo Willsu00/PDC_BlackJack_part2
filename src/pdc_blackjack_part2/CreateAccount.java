@@ -15,10 +15,6 @@ public class CreateAccount extends JFrame implements ActionListener {
 
     CreateAccount() {
 
-        setTitle("Create Account");
-        setSize(300, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         nameName = new JLabel();
         nameName.setText("Name:");
         userName = new JLabel();
@@ -39,11 +35,34 @@ public class CreateAccount extends JFrame implements ActionListener {
         panel1.add(textField3);
         panel1.add(button1);
 
+        add(panel1, BorderLayout.CENTER);
+        setTitle("Create Account");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(300, 100);
+        setVisible(true);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+        String nameName = textField1.getText();
+        String passWord = textField3.getText();
+        String passValue = textField2.getText();
+
+        if (button1 == e.getSource() && nameName != null && passWord != null && passValue != null) {
+
+            JOptionPane.showMessageDialog(this, "Account Created Successfully! Please Login to Continue!");
+
+            try {
+                Login form = new Login();
+                form.pack();
+                form.setVisible(true);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, ex.getMessage());
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Cannot create account. Please fill in all fields.");
+        }
     }
 }

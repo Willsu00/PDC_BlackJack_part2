@@ -52,7 +52,7 @@ public class Login extends JFrame implements ActionListener {
         add(panel1, BorderLayout.CENTER);
         setTitle("Login Form");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 100);
+        setSize(300, 200);
         setVisible(true);
     }
 
@@ -69,7 +69,7 @@ public class Login extends JFrame implements ActionListener {
 
                 BlackjackWindow window = new BlackjackWindow();
                 window.setVisible(true);
-                
+
                 this.dispose();
 
             } else {
