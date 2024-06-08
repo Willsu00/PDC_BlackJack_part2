@@ -7,9 +7,9 @@ import java.lang.Exception;
 
 public class CreateAccount extends JFrame implements ActionListener {
 
-    JButton button1 = new JButton("Create Account");
+    JButton button1 = new JButton("Create");
 
-    JPanel panel1 = new JPanel();
+    JPanel panel2 = new JPanel();
     JLabel userName, passWord, nameName;
     JTextField textField1, textField2, textField3;
 
@@ -26,20 +26,21 @@ public class CreateAccount extends JFrame implements ActionListener {
         textField2 = new JTextField();
         textField3 = new JPasswordField(15);
 
-        panel1 = new JPanel(new GridLayout(4, 1));
-        panel1.add(nameName);
-        panel1.add(textField1);
-        panel1.add(userName);
-        panel1.add(textField2);
-        panel1.add(passWord);
-        panel1.add(textField3);
-        panel1.add(button1);
+        panel2 = new JPanel(new GridLayout(4, 1));
+        panel2.add(nameName);
+        panel2.add(textField1);
+        panel2.add(userName);
+        panel2.add(textField2);
+        panel2.add(passWord);
+        panel2.add(textField3);
+        panel2.add(button1);
 
-        add(panel1, BorderLayout.CENTER);
+        add(panel2, BorderLayout.CENTER);
         setTitle("Create Account");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 100);
+        setSize(350, 150);
         setVisible(true);
+        setResizable(false);
 
     }
 

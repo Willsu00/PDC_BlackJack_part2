@@ -54,6 +54,7 @@ public class Login extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 200);
         setVisible(true);
+        setResizable(rootPaneCheckingEnabled);
     }
 
     @Override
@@ -78,6 +79,8 @@ public class Login extends JFrame implements ActionListener {
 
         }
         if (button2 == e.getSource()) {
+
+            this.dispose();
             CreateAccount account = new CreateAccount();
             account.setVisible(true);
 
