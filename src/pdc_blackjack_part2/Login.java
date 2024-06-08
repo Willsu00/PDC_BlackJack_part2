@@ -62,11 +62,17 @@ public class Login extends JFrame implements ActionListener {
         String userValue = textField1.getText();
         String passValue = textField2.getText();
 
-        if (nameValue.equals("name") && userValue.equals("test") && passValue.equals("1234")) {
-            JOptionPane.showMessageDialog(this, "Login Successful");
+        if (button1 == e.getSource()) {
+            if (nameValue.equals("name") && userValue.equals("test")
+                    && passValue.equals("1234")) {
+                JOptionPane.showMessageDialog(this, "Login Successful");
 
-            BlackjackWindow window = new BlackjackWindow();
-            window.setVisible(true);
+                BlackjackWindow window = new BlackjackWindow();
+                window.setVisible(true);
+
+            } else {
+                JOptionPane.showMessageDialog(this, "Invalid Username or Password");
+            }
 
         }
         if (button2 == e.getSource()) {
@@ -74,9 +80,5 @@ public class Login extends JFrame implements ActionListener {
             account.setVisible(true);
 
         }
-        if (nameValue != "name" && userValue != "test" && passValue != "1234") {
-            JOptionPane.showMessageDialog(this, "Invalid Username or Password");
-        }
-
     }
 }
